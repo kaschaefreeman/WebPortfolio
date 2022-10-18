@@ -1,38 +1,117 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Oxygen", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.profilePicture {
+  border-radius: 50%;
+  width: 100%;
+}
+.headingSeparator {
+  display: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/******Style Navigation******/
+nav {
+  background-color: #e3f2fd;
+}
+.navbar {
+  --bs-navbar-padding-y: 0 !important;
+}
+.nav-link {
+  color: rgba(0, 57, 117, 0.553) !important;
+}
+.nav-link:hover {
+  background-color: #ffffff;
+  color: rgb(46, 97, 152) !important;
+  transition: all 0.5s;
+}
+.nav-link:visited {
+  color: rgb(35, 118, 82) !important;
+}
+/******Style Links******/
+a {
+  color: rgb(21, 127, 165) !important;
+}
+a:hover {
+  color: rgb(26, 62, 98) !important;
+}
+a:visited {
+  color: rgb(37, 143, 126) !important;
+}
+/******Sections******/
+h3 {
+  font-weight: bolder;
+  font-size: 25px;
+  color: rgb(46, 97, 152);
+}
+section {
+  scroll-margin-top: 40px;
+}
+section ul {
+  list-style: none;
+}
+section li {
+  padding: 0 0.5em 0 1em;
+}
+section li:before {
+  content: "-";
+  padding-right: 5px;
+}
+/****Style list for each skill type****/
+
+/*remove margin and padding on ul*/
+.skillList {
+  margin: 0;
+  padding: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/*Remove bullet from list items*/
+.skillList li:before {
+  content: none;
+}
+
+/*format border of 4 quadrant skill list to be "t" shaped*/
+.skillListContainer:nth-of-type(odd) {
+  border-right: 1px solid darkgrey;
+}
+.skillListContainer:nth-of-type(1),
+.skillListContainer:nth-of-type(2) {
+  border-bottom: 1px solid darkgrey;
+}
+
+#projects h4{
+ color: rgb(73, 137, 177);
+ font-weight: bold;
+}
+
+/*Optional class to add background to sections and cards*/
+.addBackground {
+  background-color: rgba(210, 210, 210, 0.361);
+}
+.addBackgroundBlue {
+  background-color: rgba(73, 137, 177, 0.687);
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.addBackgroundLightBlue {
+  background-color: #e3f2fd;
+  color: rgb(151, 151, 151);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/*Conditionally format styles for large screens */
+@media only screen and (min-width: 992px) {
+  .headingSeparator {
+    display: block;
   }
-  to {
-    transform: rotate(360deg);
+  /*remove t shaped border*/
+  .skillListContainer:nth-of-type(1),
+  .skillListContainer:nth-of-type(2) {
+    border-bottom: none;
+  }
+  /*only add border between each item*/
+  .skillListContainer:not(:last-of-type) {
+    border-right: 1px solid darkgrey;
   }
 }
