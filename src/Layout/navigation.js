@@ -16,7 +16,9 @@ const Navigation = () => {
     return (
       <li key={name} className="nav-item">
         <a className="nav-link p-3" href={link}>
-          {name}
+          <span data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            {name}
+          </span>
         </a>
       </li>
     );
@@ -25,6 +27,7 @@ const Navigation = () => {
   return (
     <nav className="navbar sticky-top navbar-expand-lg">
       <button
+        id="toggle-button"
         className="navbar-toggler"
         type="button"
         data-bs-toggle="collapse"

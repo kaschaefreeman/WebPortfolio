@@ -2,6 +2,8 @@
 
 Personal web portfolio bootstrapped with [Create React App](https://github.com/facebook/create-react-app). 
 
+[View Live](https://kf-web-portfolio.herokuapp.com/)
+
 ## Available Scripts
 
 In the project directory, you can run:
