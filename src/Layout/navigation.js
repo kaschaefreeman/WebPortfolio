@@ -16,7 +16,7 @@ const Navigation = () => {
     return (
       <li key={name} className="nav-item">
         <a className="nav-link p-3" href={link}>
-          <span data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span className="d-block" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             {name}
           </span>
         </a>
