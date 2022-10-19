@@ -8,7 +8,7 @@ const Highlights = () => {
         <ul>
           <li>Current student at Thinkful expected to graduate October 2022</li>
           <li>
-            Committed to learning new thing to always be improving my skills and
+            Committed to learning new things, to always be improving my skills, and
             finding new approaches to solve problems.
           </li>
           <li>5 years experience in collaboration and team leadership</li>

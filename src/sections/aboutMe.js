@@ -15,7 +15,7 @@ const AboutMe = () => {
         </p>
         <p>
           In the past, I headed a team of 6 data entry clerks for a local refuse
-          collection company for 4 years. As the company we constantly needed to
+          collection company for 5 years. As the company grew we constantly needed to
           develop new systems and procedures to keep up with the growing number
           of requests. Through building interactive worksheets and databases
           using VBA and SQL I discovered my passion for creating innovative
