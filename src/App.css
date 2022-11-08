@@ -1,46 +1,31 @@
 * {
   box-sizing: border-box;
 }
-body {
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
   font-family: "Oxygen", sans-serif;
+  background-image: url(./Images/marble.jpg);
+  background-attachment: fixed;
 }
 
-.profilePicture {
-  border-radius: 50%;
-  width: 100%;
-}
-.headingSeparator {
-  display: none;
-}
+
 
 /******Style Navigation******/
-nav {
-  background-color: #e3f2fd;
-}
-.navbar {
-  --bs-navbar-padding-y: 0 !important;
-}
-.nav-link {
-  color: rgba(0, 57, 117, 0.553) !important;
-}
-.nav-link:hover {
-  background-color: #ffffff;
-  color: rgb(46, 97, 152) !important;
-  transition: all 0.5s;
-}
-.nav-link:visited {
-  color: rgb(35, 118, 82) !important;
-}
+
 /******Style Links******/
-a {
+ section a {
   color: rgb(21, 127, 165) !important;
 }
-a:hover {
+section a:hover {
   color: rgb(26, 62, 98) !important;
 }
-a:visited {
+section a:visited {
   color: rgb(37, 143, 126) !important;
-}
+} 
 /******Sections******/
 h3 {
   font-weight: bolder;
@@ -48,7 +33,7 @@ h3 {
   color: rgb(46, 97, 152);
 }
 section {
-  scroll-margin-top: 50ex;
+  scroll-margin-top: 10ex;
 }
 
 section ul {
@@ -103,9 +88,6 @@ section li:before {
 
 /*Conditionally format styles for large screens */
 @media only screen and (min-width: 992px) {
-  section {
-    scroll-margin-top: 12ex;
-  }
   .headingSeparator {
     display: block;
   }
@@ -118,5 +100,4 @@ section li:before {
   .skillListContainer:not(:last-of-type) {
     border-right: 1px solid darkgrey;
   }
-
 }
