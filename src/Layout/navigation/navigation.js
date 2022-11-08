@@ -1,5 +1,5 @@
 import React from "react";
-import "./navigation.css"
+import "./navigation.css";
 
 const Navigation = () => {
   //Declare links and link names
@@ -17,7 +17,11 @@ const Navigation = () => {
     return (
       <li key={name} className="nav-item">
         <a className="nav-link p-3" href={link}>
-          <div className="d-block" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <div
+            className="d-block"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
             {name}
           </div>
         </a>
@@ -26,8 +30,10 @@ const Navigation = () => {
   });
   //Return navigation bar with list items
   return (
-    <nav className="navbar sticky-top navbar-expand-lg">
-      <a  href="#home" className="navbar-brand">Kaschae Freeman</a>
+    <nav className="navbar sticky-top navbar-expand-lg navbar-dark">
+      <a href="#home" className="navbar-brand">
+        Kaschae Freeman
+      </a>
       <button
         id="toggle-button"
         className="navbar-toggler"
@@ -37,13 +43,9 @@ const Navigation = () => {
       >
         <span className="navbar-toggler-icon"></span>
       </button>
-      <div
-        className="collapse navbar-collapse p-0 m-0"
-        id="navbarNav"
-        >
+      <div className="collapse navbar-collapse p-0 m-0" id="navbarNav">
         <ul className="navbar-nav">{listItems}</ul>
       </div>
-
     </nav>
   );
 };
