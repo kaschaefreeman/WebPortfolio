@@ -1,6 +1,5 @@
 import React from "react";
 import "./navigation.css"
-import myLogo from "../../Images/myLogo.png"
 
 const Navigation = () => {
   //Declare links and link names

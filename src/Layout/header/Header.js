@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import profilePic from "../../Images/profile-picture-no-bg.png";
 import "./header.css";
 const Header = () => {
