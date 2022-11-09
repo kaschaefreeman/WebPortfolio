@@ -48,7 +48,7 @@ const TechnicalSkills = () => {
       id="technicalSkills"
       className="card m-3 border-light shadow-sm addBackgroundLightBlue"
     >
-      <div className="m-1 text-center text-lg-start card-body">
+      <div className="m-1 card-body">
         <h3 className="display-5 card-title mb-3">Technical Skills</h3>
         <div className="row justify-content-between m-2 ">{skillsList}</div>
       </div>

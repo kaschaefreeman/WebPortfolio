@@ -3,7 +3,7 @@ import React from "react";
 const Highlights = () => {
   return (
     <section id="highlights" className="card m-3 border-light shadow-sm">
-      <div className="m-1 text-center text-lg-start card-body">
+      <div className="m-1 card-body">
         <h3 className="display-5 card-title">Highlights</h3>
         <ul>
           <li>Current student at Thinkful expected to graduate October 2022</li>

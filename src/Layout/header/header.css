@@ -4,6 +4,7 @@ header {
   display: inline-flex;
   flex-direction: row;
   align-items: center;
+  scroll-margin-top: 60px;
 }
 /*Format profile picture image with pentagon shape */
 header img {

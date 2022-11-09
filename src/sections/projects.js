@@ -72,7 +72,7 @@ const Projects = () => {
     {
       name: "Decoder Ring",
       description: [
-        "Built to be an encryption/decryption application to communicate and read top-secret messages utilizing the test-driven development method.",
+        "Built to be an encryption/ decryption application to communicate and read top-secret messages utilizing the test-driven development method.",
       ],
       images: DecoderImages,
       technology: [
@@ -145,7 +145,7 @@ const Projects = () => {
       );
       //map each description array item to be a list item
       const descriptionList = description.map((sentence, index) => (
-        <li key={`${name}-descriptionItem-${index}`}>{sentence}</li>
+        <li key={`${name}-descriptionItem-${index}`} className="mb-2">{sentence}</li>
       ));
       //return a card for each project with carousel and description
       return (
@@ -174,7 +174,7 @@ const Projects = () => {
   );
   return (
     <section id="projects" className="card m-3 border-light shadow-sm">
-      <div className="m-1 text-center text-lg-start card-body">
+      <div className="m-1 card-body">
         <h3 className="display-5 card-title">Projects</h3>
         {projectCards}
       </div>
