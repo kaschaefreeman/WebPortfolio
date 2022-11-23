@@ -6,13 +6,13 @@ const Highlights = () => {
       <div className="m-1 card-body">
         <h3 className="display-5 card-title">Highlights</h3>
         <ul>
-          <li>Current student at Thinkful expected to graduate October 2022</li>
+          <li>Graduate of Thinkful's Full Stack Software Engineering program</li>
           <li>
             Committed to learning new things, to always be improving my skills, and
             finding new approaches to solve problems.
           </li>
-          <li>5 years experience in collaboration and team leadership</li>
-          <li>5 years experience working with Relational DBMS.</li>
+          <li>3 years experience in collaboration and team leadership</li>
+          <li>3 years experience working with Relational DBMS, SQL,and VBA in a professional setting.</li>
         </ul>
       </div>
     </section>

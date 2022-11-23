@@ -6,7 +6,7 @@ const AboutMe = () => {
       <div className="m-1 card-body">
         <h3 className="display-5 card-title">About Me</h3>
         <p>
-          Hello, my name is Kaschae (kuh-shay), and I am a junior software
+          Hello, my name is Kaschae, and I am a junior software
           engineer starting my journey. I approach every team and project with a
           creative and solution-driven mindset.
         </p>
@@ -25,7 +25,7 @@ const AboutMe = () => {
           Through building interactive worksheets and databases using VBA and
           SQL I discovered my passion for creating innovative solutions for
           everyday problems through code. This discovery had then lead me to
-          attend Thinkful, where I have developed a proficiency in JavaScript
+          attend and successfully complete Thinkful's Full Stack Software Engineering program, where I have developed a proficiency in JavaScript
           for front-end and back-end programming.
         </p>
       </div>
