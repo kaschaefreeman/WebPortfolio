@@ -9,7 +9,7 @@ const Navigation = () => {
     { name: "Highlights", link: "#highlights" },
     { name: "Technical Skills", link: "#technicalSkills" },
     { name: "Projects", link: "#projects" },
-    { name: "Contact", link: "#contact" },
+    { name: "Contact", link: "#home" },
   ];
 
   //Map headings to each navigation list item
