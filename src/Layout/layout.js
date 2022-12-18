@@ -8,10 +8,10 @@ import Navigation from "./navigation/navigation";
 
 const Layout = () => {
   return (
-    <main >
+    <main className="m-0">
       <Navigation />
       <Header />
-      <article className="container">
+      <article className="m-0" >
         <AboutMe />
         <Highlights />
         <TechnicalSkills />

@@ -149,10 +149,10 @@ const Projects = () => {
       ));
       //return a card for each project with carousel and description
       return (
-        <div className="card mb-3 shadow border-light" key={name}>
+        <div className="card projectCard p-5 mb-5 shadow" key={name}>
           <div className="row g-0">
-            <div className="col-lg-6">{projectCarousel}</div>
-            <div className="col-lg-6">
+            <div className="col-lg-7">{projectCarousel}</div>
+            <div className="col-lg-5">
               <div className="card-body">
                 <h4 className="card-title">{name}</h4>
                 <ul className="card-text">{descriptionList}</ul>
@@ -173,12 +173,13 @@ const Projects = () => {
     }
   );
   return (
-    <section id="projects" className="card m-3 border-light shadow-sm">
-      <div className="m-1 card-body">
-        <h3 className="display-5 card-title">Projects</h3>
-        {projectCards}
+    <section id="projects">
+        <h3>Projects</h3>
+        <div className="shape">
       </div>
-    </section>
+        {projectCards}
+        
+</section>
   );
 };
 

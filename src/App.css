@@ -5,46 +5,98 @@
 body {
   width: 100%;
   height: 100%;
-  margin: 0;
-  padding: 0;
   font-family: "Oxygen", sans-serif;
   background-image: url(./Images/marble.jpg);
   background-attachment: fixed;
 }
+
 /*************** Sections ****************/
 /******Style Links for each section******/
 section {
-  scroll-margin-top: 10ex;
+  scroll-margin-top: 5ex;
+  padding: 25px;
+  background-color: rgb(26, 56, 88);
+
+  color: white;
+  min-height: 100vh;
+  overflow: visible;
 }
+
+section:nth-child(even) {
+  background-color: rgb(30, 64, 100);
+}
+
 h3 {
   font-weight: bolder;
-  font-size: 25px;
-  color: rgb(46, 97, 152);
-  text-align: center;
+  font-size: 30px;
+  padding-left: 10px;
+  margin-top: 5px;
 }
+.shape {
+  clip-path: polygon(0% 0%, 100% 0%, 75% 100%, 0% 100%);
+  background-color: rgb(204, 188, 153);
+  width: 30%;
+  height: 20px;
+  margin-bottom: 25px;
+}
+
 section ul {
-  list-style:none;
+  list-style: none;
   padding: 0;
 }
 
 section li {
   padding: 0 0.5em 0 1em;
 }
+
 section li:before {
   color: wheat;
   content: "\2022";
   padding-right: 20px;
   font-weight: bolder;
 }
- section a {
+
+.listInside{
+  width: fit-content;
+  padding: 30px;
+  background-color: rgb(23, 50, 80);
+  transform: translateY(-20px) translateX(40px);
+}
+
+.listOutside{
+  border-right: solid;
+  border-bottom: solid;
+  border-color: white;
+  border-width: 4px;
+  width: fit-content;
+  margin-top: 30px;
+  background-color: white;
+  padding: 0 10px 0 10px;
+}
+
+section a {
   color: rgb(21, 127, 165) !important;
 }
+
 section a:hover {
   color: rgb(26, 62, 98) !important;
 }
+
 section a:visited {
   color: rgb(37, 143, 126) !important;
-} 
+}
+
+.aboutContainer {
+  border-right: dotted;
+  border-bottom: dotted;
+  border-color: white;
+  border-width: 4px;
+}
+
+.projectCard{
+  background-color: rgb(26, 56, 88);
+  font-size: 15px;
+}
 
 /****Style list for each skill type****/
 
@@ -88,14 +140,24 @@ section a:visited {
 
 /*Conditionally format styles for large screens */
 @media only screen and (min-width: 992px) {
-  .headingSeparator {
-    display: block;
+  h3{
+    margin-top: 10px;
+  }
+  .listOutside{
+    margin-top: 30px;
+  }
+  .listInside{
+    padding: 70px;
+  }
+  .shape {
+    width: 15%;
   }
   /*remove t shaped border*/
   .skillListContainer:nth-of-type(1),
   .skillListContainer:nth-of-type(2) {
     border-bottom: none;
   }
+
   /*only add border between each item*/
   .skillListContainer:not(:last-of-type) {
     border-right: 1px solid darkgrey;

@@ -51,6 +51,9 @@ header ul li {
   header {
     height: calc(100vh - 56px);
   }
+  header img {
+    height: calc(100vh - 76px);
+  }
 
   h2 {
     font-size: 23px;

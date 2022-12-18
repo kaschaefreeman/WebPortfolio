@@ -32,7 +32,7 @@ const Navigation = () => {
   return (
     <nav className="navbar sticky-top navbar-expand-lg navbar-dark">
       <a href="#home" className="navbar-brand">
-        Kaschae Freeman
+        <h1>Kaschae Freeman</h1>
       </a>
       <button
         id="toggle-button"

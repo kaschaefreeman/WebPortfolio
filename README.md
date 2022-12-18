@@ -1,8 +1,8 @@
 # Kaschae Freeman's Web Portfolio
 
-Personal web portfolio bootstrapped with [Create React App](https://github.com/facebook/create-react-app). 
+Personal web portfolio bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-[View Live](https://kf-web-portfolio.herokuapp.com/)
+[View Live](https://kaschae-freeman-portfolio.com)
 
 ![demo](src/Images/demo.PNG)
 

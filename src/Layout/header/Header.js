@@ -6,7 +6,7 @@ const Header = () => {
   const myPicture = (
     <img
       src={profilePic}
-      className="addBackgroundBlue col-5 col-lg-6"
+      className="addBackgroundBlue col-5 col-lg-5"
       alt="Kaschae Freeman"
     />
   );
