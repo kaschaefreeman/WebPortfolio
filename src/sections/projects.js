@@ -1,12 +1,11 @@
-import React from "react";
 import DecoderImages from "../Images/Decoder Project/decoderImages";
 import FlashcardAppImages from "../Images/FlashcardApp/flashcardImages";
 import weLoveMoviesImages from "../Images/WeLoveMovies/movies";
 import reservationImages from "../Images/Restaurant Reservations/restaurantReservations";
 
-const Projects = () => {
+
   //Declare projects to be mapped to a card with Carousel of images and description on card body
-  const projects = [
+  const projectsDetails = [
     {
       name: "Restaurant Reservations",
       description: [
@@ -90,7 +89,7 @@ const Projects = () => {
   ];
 
   //Map through each project to get the to render a card with carousel of images for each
-  const projectCards = projects.map(
+  const projectCards = projectsDetails.map(
     ({ name, description, images, technology, repo, demo }) => {
       const carouselId = name.replace(/\s/g, "");
       //load each carousel images
@@ -172,15 +171,11 @@ const Projects = () => {
       );
     }
   );
-  return (
-    <section id="projects">
-        <h3>Projects</h3>
-        <div className="shape">
-      </div>
-        {projectCards}
-        
-</section>
-  );
-};
 
-export default Projects;
+
+        
+
+
+const projects = { id: "projects", name: "Projects", content:projectCards }
+
+export default projects;

@@ -1,28 +1,20 @@
-import React from "react";
+const content = (<>
+  <div className="container mt-5">
+    <div className="row align-content-center justify-content-center listOutside shadow">
+      <ul className="listInside shadow col">
+        <li>5 years experience working with Relational DBMS, SQL,and VBA</li>
+        <li>3 years experience in collaboration and team leadership</li>
+        <li>2 years experience with automation with Selenium</li>
+        <li>Graduate of Thinkful's Full Stack Software Engineering program</li>
+        <li>
+          Committed to learning new things, to always be improving my skills, and
+          finding new approaches to solve problems.
+        </li>
+      </ul>
+    </div>
+  </div>
+</>)
 
-const Highlights = () => {
-  return (
-    <section id="highlights" className="">
-        <h3>Highlights</h3>
-        <div className="shape">
-      </div>
-      <div className="container mt-5">
+const highlights = { id: "highlights", name: "Highlight", content }
 
-      <div className="listOutside shadow">
-        <ul className="listInside shadow">
-          <li>5 years experience working with Relational DBMS, SQL,and VBA</li>
-          <li>3 years experience in collaboration and team leadership</li>
-          <li>2 years experience with automation with Selenium</li>
-          <li>Graduate of Thinkful's Full Stack Software Engineering program</li>
-          <li>
-            Committed to learning new things, to always be improving my skills, and
-            finding new approaches to solve problems.
-          </li>
-        </ul>
-        </div>
-      </div>
-    </section>
-  );
-};
-
-export default Highlights;
+export default highlights;

@@ -1,6 +1,3 @@
-import React from "react";
-
-const TechnicalSkills = () => {
   //declare skill types and attributes to be mapped to a list
   const skills = [
     {
@@ -42,17 +39,8 @@ const TechnicalSkills = () => {
       </div>
     );
   });
-  //Render Card with skill list
-  return (
-    <section
-      id="technicalSkills"
-    >
-        <h3>Technical Skills</h3>
-        <div className="shape">
-      </div>
-        <div className="row justify-content-between m-5">{skillsList}</div>
-    </section>
-  );
-};
+  //Render Container with skill list
+  const content = <div className="row justify-content-between m-5">{skillsList}</div>
+  const technicalSkills = { id: "technicalSkills", name: "Technical Skills", content }
 
-export default TechnicalSkills;
+export default technicalSkills;

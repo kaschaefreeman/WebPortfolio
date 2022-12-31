@@ -1,0 +1,72 @@
+header {
+  height: fit-content;
+  width: 100%;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  scroll-margin-top: 60px;
+}
+/*Format profile picture image with pentagon shape */
+header img {
+  width: 100%;
+  height: 30vh;
+  object-fit: scale-down;
+  clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+}
+
+h2 {
+  font-size: 2.2em;
+}
+header .lead {
+  font-size: 1.4em;
+}
+/*Class for the vertical rule separator In header between title and location
+  Will be hidden on smaller media and visible for larger media screens*/
+.headingSeparator {
+  display: none;
+}
+
+/*Add circle border around link icons and decrease icon sizes*/
+.outsideLinks {
+  font-size: 12px;
+  border: 2px solid white;
+  border-radius: 50%;
+  padding: 5px;
+  color: wheat;
+}
+
+header ul {
+  margin-top: 30px !important;
+  padding-left: 0;
+  padding-right: 10px;
+}
+
+header ul li {
+  list-style: none;
+  margin: 30px 15px 30px 0;
+}
+
+@media only screen and (min-width: 992px) {
+  /*On larger screens format header to be full viewport height*/
+  header {
+    height:89vh;
+  }
+  header img {
+    height: 75vh;
+  }
+
+  /*Display vertical rule separator on larger media*/
+  .headingSeparator {
+    display: block;
+  }
+
+  /*Increase icon size and padding on inside of the circle*/
+  .outsideLinks {
+    font-size: 20px;
+    padding: 10px;
+  }
+  header ul li {
+    list-style: none;
+    margin: 30px 30px 30px 0;
+  }
+}

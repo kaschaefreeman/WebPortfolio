@@ -1,0 +1,31 @@
+nav {
+  background-color: rgb(26, 56, 88);
+  height:11vh;
+  color: white;
+}
+
+.navbar {
+  --bs-navbar-padding-y: 0 !important;
+}
+.navbar-nav{
+  background-color: rgb(26, 56, 88);
+}
+
+h1{
+  font-family: "Dancing Script", cursive;
+  color: white;
+  padding: 5px 15px  ;
+  font-size: 2.5em;
+}
+
+.nav-link {
+  color: rgb(255, 255, 255) !important;
+}
+ .nav-link:hover {
+  background-color:  rgb(110, 107, 85) !important;
+  color: rgb(142, 183, 226) !important;
+  transition: all 0.5s;
+}
+ .nav-link:visited {
+  color: rgb(151, 144, 140) !important;
+}
