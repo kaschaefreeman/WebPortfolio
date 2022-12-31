@@ -8,7 +8,7 @@ const SectionLayout = ({ section }) => {
             <div className="row">
                 <h3 className="col-12">{name}</h3>
                 <div className="shape col-12"></div>
-                <div className="container contentContainer row mt-5 ">
+                <div className="container contentContainer row">
                     <div className="col-12 justify-content-center align-self-center align-content-center">
                         {content}
                     </div>
