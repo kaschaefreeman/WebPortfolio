@@ -1,3 +1,4 @@
+import React from "react";
 const content = (<>
   <p>
     Ever felt like you are playing the game of life on hard mode? As a

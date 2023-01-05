@@ -1,3 +1,4 @@
+import React from "react";
 const content = (<>
   <div className="container mt-5">
     <div className="row align-content-center justify-content-center listOutside shadow">

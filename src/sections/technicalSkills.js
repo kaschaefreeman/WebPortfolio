@@ -1,4 +1,4 @@
-
+import React from "react";
   //declare skill types and attributes to be mapped to a list
   const skills = [
     {

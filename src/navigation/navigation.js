@@ -1,7 +1,9 @@
 import React from "react";
 import "./navigation.css";
+import { useLocation } from "react-router-dom";
 
 const Navigation = () => {
+
   //Declare links and link names
   const headings = [
     { name: "Home", link: "#home" },
@@ -12,15 +14,23 @@ const Navigation = () => {
     { name: "Contact", link: "#home" },
   ];
 
+  //Function to change the visible url removing the id anchor tag on click of a navigation link that goes to an id section on the page
+  const replaceUrl = () => {
+    setTimeout(() => {
+      window.history.pushState(document.html, document.title, document.URL.split('#')[0]);
+    }, 0.5)
+  }
+
   //Map headings to each navigation list item
   const listItems = headings.map(({ name, link }) => {
     return (
       <li key={name} className="nav-item">
-        <a className="nav-link p-3" href={link}>
+        <a className="nav-link px-5" href={link}>
           <div
             className="d-block"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNav"
+            onClick={replaceUrl}
           >
             {name}
           </div>
@@ -31,7 +41,7 @@ const Navigation = () => {
   //Return navigation bar with list items
   return (
     <nav className="navbar sticky-top navbar-expand-lg navbar-dark">
-      <a href="#home" className="navbar-brand">
+      <a href="#home" className="navbar-brand" onClick={replaceUrl}>
         <h1>Kaschae Freeman</h1>
       </a>
       <button
