@@ -16,7 +16,7 @@ const Header = () => {
   const myPicture = (
     <img
       src={profilePic}
-      className="addBackgroundBlue col-5 col-lg-5"
+      className="addBackgroundBlue col-5"
       alt="Kaschae Freeman"
       data-aos="fade-right"
     />
