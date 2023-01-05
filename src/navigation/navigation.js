@@ -17,7 +17,7 @@ const Navigation = () => {
   const replaceUrl = () => {
     setTimeout(() => {
       window.history.pushState(document.html, document.title, document.URL.split('#')[0]);
-    }, 0.5)
+    }, 1)
   }
 
   //Map headings to each navigation list item
