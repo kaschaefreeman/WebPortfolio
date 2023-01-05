@@ -17,11 +17,11 @@ header img {
 }
 
 h2 {
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 header .lead {
-  font-size: 1.2em;
+  font-size: 1em;
 }
 
 /*Class for the vertical rule separator In header between title and location
@@ -67,6 +67,14 @@ header ul li {
 
   header img {
     height: 75vh;
+  }
+
+  h2{
+    font-size: 2.2em;
+  }
+
+  header .lead{
+    font-size: 1.2em;
   }
 
   /*Display vertical rule separator on larger media*/
