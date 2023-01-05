@@ -1,13 +1,24 @@
-import React from "react";
+import React, {useEffect} from "react";
 import profilePic from "../Images/profile-picture-no-bg.png";
 import "./header.css";
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+
 const Header = () => {
+
+  useEffect(()=>{
+    AOS.init({duration: 2000})
+  },[])
+
   //Profile picture with pentagon shape
   const myPicture = (
     <img
       src={profilePic}
       className="addBackgroundBlue col-5 col-lg-5"
       alt="Kaschae Freeman"
+      data-aos="fade-right"
     />
   );
 
@@ -43,7 +54,7 @@ const Header = () => {
   const linkButtons = linkInfo.map((link) => {
     const { name, icon, url, isDownload } = link;
     return (
-      <li key={name} className="col-1">
+      <li key={name} className="col-1" data-aos="rotate">
         <a href={url} download={isDownload}>
           <i className={`bi ${icon} outsideLinks`} title={name}></i>
         </a>
@@ -54,12 +65,12 @@ const Header = () => {
   //Container for Header text and links
   const headerText = (
     <div className="container px-3 mt-3">
-      <h2 className="row">
+      <h2 className="row" data-aos="fade-left">
         <span className="col-auto">Software Developer</span>
         <span className="col-1 vr headingSeparator"></span>
         <span className="col-12 col-lg-auto">Woodbridge, VA</span>
       </h2>
-      <p className="lead col-12">
+      <p className="lead col-12" data-aos="fade-left">
         Motivated junior software engineer proficient in JavaScript for
         front-end and back-end programming.
       </p>
