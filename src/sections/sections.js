@@ -12,8 +12,8 @@ const SectionLayout = ({ section }) => {
 
     const { id, content, name } = section
 
-    let fadeAnimation ="" 
-    switch(id){
+    let fadeAnimation = ""
+    switch (id) {
         case "aboutMe":
             fadeAnimation = "fade-up-left"
             break
@@ -22,8 +22,9 @@ const SectionLayout = ({ section }) => {
             break
         case "technicalSkills":
             fadeAnimation = "flip-up"
-
-
+            break
+        default:
+            fadeAnimation = "fade";
     }
 
     return (
