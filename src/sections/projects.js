@@ -148,7 +148,7 @@ import reservationImages from "../Images/Restaurant Reservations/restaurantReser
       ));
       //return a card for each project with carousel and description
       return (
-        <div className="card projectCard p-5 mb-5 shadow" key={name}>
+        <div className="card projectCard p-5 mb-5 shadow" key={name} data-aos="slide-left">
           <div className="row g-0">
             <div className="col-lg-7">{projectCarousel}</div>
             <div className="col-lg-5">

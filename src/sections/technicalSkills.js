@@ -1,3 +1,4 @@
+
   //declare skill types and attributes to be mapped to a list
   const skills = [
     {
@@ -27,7 +28,7 @@
   //Map each list to render a list with a heading
   const skillsList = skills.map(({ type, attributes }, index) => {
     const attributesList = attributes.map((attribute) => (
-      <li key={attribute}>{attribute}</li>
+      <li key={attribute} data-aos="slide-up">{attribute}</li>
     ));
     return (
       <div
