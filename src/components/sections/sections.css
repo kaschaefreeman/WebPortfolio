@@ -1,6 +1,6 @@
-/** Sections will be formatted as follows 
+/* * Sections will be formatted as follows 
 * section > h3 > div .textDecoration > div .contentContainer
-**/
+* */
 
 section {
   scroll-margin-top: 6rem;
@@ -30,9 +30,10 @@ h3 {
 
 .contentContainer {
   margin: 3rem 0 3rem 0;
-  display: grid;
   width: 100%;
   height: 100%;
+  display:flex;
+  flex-direction:column;
 }
 
 /** make images responsive within sections**/
@@ -40,8 +41,7 @@ h3 {
   width: 100%;
   height: 100%;
   object-fit: contain;
-  justify-self: center;
-  align-self: center;
+align-self: center;
 }
 
 
