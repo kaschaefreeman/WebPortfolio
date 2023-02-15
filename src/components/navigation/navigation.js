@@ -91,7 +91,7 @@ const Navigation = () => {
     return (
       <a href={url} className="mx-2">
         <i className={`bi ${icon} icon-links`} title={name}></i>
-        <span class="sr-only" aria-hidden="true">  {name}</span>
+        <span>  {name}</span>
       </a>
     );
   });
