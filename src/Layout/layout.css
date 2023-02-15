@@ -25,15 +25,14 @@ a:link {
   color: rgb(131, 91, 123);
   text-decoration: none;
 }
-
+a:visited {
+  color: rgb(151, 57, 151);
+}
 a:hover, a span:hover {
   font-size: larger;
   color: rgb(120, 81, 120);
 }
 
-a:visited {
-  color: rgb(151, 57, 151);
-}
 
 footer {
   z-index: 10000;
