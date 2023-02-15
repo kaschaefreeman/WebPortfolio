@@ -66,17 +66,7 @@ nav img {
   border-radius: 50%;
   background-color:rgba(73, 137, 177, 0.687);
 }
-nav a {
-  color: rgb(87, 73, 87);
-}
 
-nav a:hover {
-  font-size: larger;
-  color: rgb(87, 73, 87);
-}
-nav a:visited {
-  color: rgb(164, 119, 156) !important;
-}
 
 @media only screen and (min-width: 992px) {
   /*On larger screens format header to be full viewport height*/
