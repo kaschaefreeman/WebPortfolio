@@ -1,6 +1,6 @@
 header {
   width: 100%;
-  height: calc(100vh - 7rem);
+  height: 90vh;
   display: grid;
   overflow-x: hidden;
   background-image: url(../../Images/main-wallpaper.jpg);
