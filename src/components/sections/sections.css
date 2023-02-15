@@ -1,0 +1,158 @@
+/** Sections will be formatted as follows 
+* section > h3 > div .textDecoration > div .contentContainer
+**/
+
+section {
+  scroll-margin-top: 6rem;
+  padding: 3rem;
+  min-height: calc(100vh - 6rem);
+  max-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+h3 {
+  text-align: center;
+  color: rgb(128, 119, 130);
+  letter-spacing: 5px;
+}
+
+/** underline div under heading **/
+.textDecoration {
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+  background-color: rgb(203, 129, 187);
+  width: 5rem;
+  height: 0.3rem;
+}
+
+.contentContainer {
+  margin: 3rem 0 3rem 0;
+  display: grid;
+  width: 100%;
+  height: 100%;
+}
+
+/** make images responsive within sections**/
+.contentContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  justify-self: center;
+  align-self: center;
+}
+
+
+
+/**Set Card header bg colors for all sections**/
+
+.card-header {
+  background-color: rgb(164, 119, 156) !important;
+}
+
+.card:nth-of-type(even) .card-header {
+  background-color: rgb(161, 146, 161) !important;
+}
+/*******************************/
+
+/** List style for all sections **/
+
+section ul {
+  list-style: none;
+  padding: 0;
+}
+
+section li {
+  padding: 0 0.5em 0 1em;
+}
+
+section li:before {
+  color: rgb(164, 119, 156) !important;
+  content: "\2022";
+  padding-right: 20px;
+  font-weight: bolder;
+}
+
+/**********************************/
+
+/************* TECHNICAL SKILLS SECTION SPECIFIC *******************/
+/** Technical skills are formatted as follows:
+* div .skillsContainer (main container for all list) > div .skillListContainer (container for a single skill name and list that follows) > h4 + ul .skillList
+**/
+/**** Style list for each skill type on ****/
+
+.skillsContainer h4 {
+  text-align: center;
+}
+
+.skillsContainer {
+  padding: 1rem 0 1rem 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*remove margin and padding on ul*/
+.skillList {
+  text-align: center;
+}
+
+/*Remove bullet from list items*/
+.skillList li:before {
+  content: none;
+}
+
+.skillListContainer {
+  padding: 1rem 0 1rem 0;
+}
+/*format border of 4 quadrant skill list to be "t" shaped*/
+.skillListContainer:nth-of-type(odd) {
+  border-right: 1px solid rgb(120, 81, 120);
+}
+
+.skillListContainer:nth-of-type(1),
+.skillListContainer:nth-of-type(2) {
+  border-bottom: 1px solid rgb(104, 87, 104);
+}
+/*****************************************************************/
+/** Styles for projects sections **/
+
+#projects h4 {
+  color: rgb(130, 93, 130);
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+#projects .card{
+  padding-bottom: 1rem;
+  margin-bottom: 3rem;
+  box-shadow: 0 .5rem 1rem  rgb(136, 125, 136);
+}
+/**********************************/
+
+/*Conditionally format styles for large screens */
+@media only screen and (min-width: 992px) {
+  section {
+    scroll-margin-top: 0;
+    min-height: 100vh;
+  }
+  h3 {
+    margin-top: 10px;
+  }
+
+  .contentContainer img {
+    width: 75%;
+    height: 75%;
+  }
+  /*remove t shaped border*/
+  .skillListContainer:nth-of-type(1),
+  .skillListContainer:nth-of-type(2) {
+    border-bottom: none;
+  }
+
+  /*only add border between each item*/
+  .skillListContainer:not(:last-of-type) {
+    border-right: 1px solid rgb(120, 81, 120);
+  }
+}
