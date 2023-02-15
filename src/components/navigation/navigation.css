@@ -69,9 +69,9 @@ nav img {
 
 
 @media only screen and (min-width: 992px) {
-  /*On larger screens format header to be full viewport height*/
-
-  /*Display vertical rule separator on larger media*/
+  nav{
+    height: 100%;
+  }
   .sidebar-sticky {
     position: -webkit-sticky;
     position: sticky;
