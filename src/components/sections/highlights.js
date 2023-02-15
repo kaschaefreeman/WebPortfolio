@@ -23,7 +23,7 @@ const content = highlightInfo.map(({ title, skills }, index) => {
     <div class="card flex-row my-3" key={index}>
       <div class="card-header"></div>
       <div class="card-body">
-        <h5 class="card-title">{title}</h5>
+        <h4 class="card-title">{title}</h4>
         <p class="card-text">{skills}</p>
       </div>
     </div>
