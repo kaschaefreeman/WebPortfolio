@@ -81,7 +81,7 @@ const Navigation = () => {
     {
       name: "Email",
       icon: "bi-envelope",
-      url: "mailto:kaschaefreeman@gmail.com",
+      url: "mailto:mariekfreeman@gmail.com",
     },
   ];
 
