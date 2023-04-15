@@ -3,8 +3,8 @@ import businessWomanWorkingPic from "../../Images/vecteezy_a-business-woman-usin
 const content = (
   <>
     <p>
-      Hi There! My name is Kaschae Freeman, and I am a full-stack software
-      engineer, based in the US, currently working at The Last Barbershop. I am
+      Hi There! My name is Marie Freeman, and I am a full-stack software
+      engineer, based in the US, currently working at Catalyte. I am
       a graduate of Thinkful's Full-Stack Software Engineering program.
     </p>
     <p>

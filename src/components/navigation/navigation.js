@@ -63,7 +63,7 @@ const Navigation = () => {
 
   //Profile picture with pentagon shape
   const myPicture = (
-    <img src={profilePic} alt="Kaschae Freeman" />
+    <img src={profilePic} alt="Marie Freeman" />
   );
 
   //List of links to be rendered as contact info and other personal sites
@@ -71,7 +71,7 @@ const Navigation = () => {
     {
       name: "LinkedIn",
       icon: "bi-linkedin",
-      url: "https://www.linkedin.com/in/kaschae-freeman",
+      url: "https://www.linkedin.com/in/marie-k-freeman",
     },
     {
       name: "GitHub",
@@ -109,7 +109,7 @@ const Navigation = () => {
         <span className="navbar-toggler-icon"></span>
       </button>
       <a href="#home" className="navbar-brand" onClick={replaceUrl}>
-        <h1>Kaschae Freeman</h1>
+        <h1>Marie Freeman</h1>
       </a>
       <div className="collapse navbar-collapse sidebar-sticky" id="navbarNav">
         <ul>

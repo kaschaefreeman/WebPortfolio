@@ -1,8 +1,8 @@
-# Kaschae Freeman's Web Portfolio
+# Marie Freeman's Web Portfolio
 
 Personal web portfolio bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-[View Live](https://kaschae-freeman-portfolio.com)
+[View Live](https://marie-freeman-portfolio.com)
 
 ![demo](src/Images/demo.PNG)
 
